@@ -21,6 +21,7 @@ public class UserController {
 
     @PostMapping("/addUsers")
     public List<User> addUsers(@RequestBody  List<User> users){
+        System.out.println("Under Add many users method.");
         return userService.createUsers(users);
     }
 
